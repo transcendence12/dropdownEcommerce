@@ -1,12 +1,12 @@
 const optionEl = document.querySelectorAll('.option')
-const textBoxEl = document.querySelector('.textBox') //input
+const textBoxEl = document.querySelector('.textBox')
 const dropdownEl = document.querySelector('.dropdown')
 const selectEl = document.querySelector('.select')
 const optionsEl = document.querySelector('.options')
 const infoEls = document.querySelectorAll('.info')
 const btnEl = document.querySelector('.btn')
 
-// let isAvailable = true;
+// let isAvailable
 
 selectEl.onclick = () => {
     dropdownEl.classList.toggle("active")
@@ -15,9 +15,9 @@ selectEl.onclick = () => {
 optionEl.forEach((el) => {
     el.addEventListener("click", () => {
         textBoxEl.value = el.firstElementChild.firstElementChild.textContent;
-        dropdownEl.classList.remove("active");
+        dropdownEl.classList.remove("active")
         optionEl.forEach((el) => {
-            el.classList.remove("selected");
+            el.classList.remove("selected")
         });
         el.classList.add("selected")
     })
