@@ -3,9 +3,10 @@ const textBoxEl = document.querySelector('.textBox') //input
 const dropdownEl = document.querySelector('.dropdown')
 const selectEl = document.querySelector('.select')
 const optionsEl = document.querySelector('.options')
-const isInStock = document.querySelectorAll('.is-in-stock')
-const infoEls = document.querySelector('.info')
-const sizeEl = document.querySelectorAll('.size')
+const infoEls = document.querySelectorAll('.info')
+const btnEl = document.querySelector('.btn')
+
+// let isAvailable = true;
 
 selectEl.onclick = () => {
     dropdownEl.classList.toggle("active")
@@ -21,4 +22,18 @@ optionEl.forEach((el) => {
         el.classList.add("selected")
     })
 })
+
+// infoEls.forEach((item) => {
+//     if(!isAvailable) {
+//         item.classList.remove("is-in-stock")
+//         item.textContent = ''
+//         item.classList.add("not-in-stock")
+//         item.textContent = "Notify Me"
+//     } else {
+//         item.classList.add("is-in-stock")
+//         item.textContent = "In Stock"
+//     }
+// })
+
+btnEl.addEventListener('click', () => console.log("clicked"))
 
