@@ -67,6 +67,10 @@ body {
     justify-content: space-between;
 }
 
+/* .option .selected.info {
+    visibility: hidden;
+} */
+
 .dropdown .options .option .size {
     text-transform: uppercase;
 }
@@ -82,5 +86,9 @@ body {
 
 .dropdown .options div:hover {
     background: #62baea;
-    /* color: #c8c8c8; // if not accessible*/
 }
+
+/* ---------- if not in stock ---------- */
+/* .dropdown .options div .not-in-stock {
+    color:  #c8c8c8;
+} */
